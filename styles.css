@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url(https://source.unsplash.com/random);
+  background-repeat: "no-repeat";
+  background-position: center;
+  background-size: cover;
+  background-color: #333;
+  background-blend-mode: multiply;
+}
+nav {
+  background: transparent;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  margin-right: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+nav a:hover {
+  color: #fff;
+}
+nav h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.95rem;
+}
+form {
+  max-width: 450px;
+  margin: 2rem auto;
+  /* background-color: #aaa; */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: #fff;
+}
+.fa-bars {
+  color: #fff;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media screen and (max-width: 800px) {
+  form {
+    width: 100vw;
+    margin: 2rem 1rem;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+  .nav-elem {
+    display: block;
+    background-color: #fff;
+    display: none;
+    padding: 0.5rem 2rem 0.75rem 0.5rem;
+    border-radius: 6px;
+    position: fixed;
+    right: 3rem;
+    top: 2rem;
+  }
+  .nav-elem li {
+    display: block;
+    margin-top: 0.75rem;
+  }
+  .nav-elem a {
+    color: #222;
+    font-size: 18px;
+  }
+  .nav-elem a:hover {
+    color: #222;
+  }
+
+  .fa-bars {
+    display: block;
+    color: #fff;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+  }
+  .show-nav {
+    display: block;
+  }
+}
